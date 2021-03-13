@@ -6,6 +6,6 @@ Program that encode and decode text with spiral matrix method
 - Maven 3.6.3+ [Ссылка](https://maven.apache.org/download.cgi)
 
 ## How to use
-- Build jar file according to [INSTALL.md](https://github.com/kondrashovaq/encoder/blob/main/INSTALL.md)
+- Build jar file according to [INSTALL.md](https://github.com/kondrashovaq/encoder/blob/master/INSTALL.md)
 - Run file `java -jar ./target/encoder.jar`
 - For other purposes import project to IDE

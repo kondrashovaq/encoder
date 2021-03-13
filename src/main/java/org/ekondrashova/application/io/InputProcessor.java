@@ -4,8 +4,6 @@ import org.ekondrashova.application.factory.LoggerFactory;
 import org.ekondrashova.application.logger.Logger;
 import org.ekondrashova.application.text.TextProcessor;
 
-import java.util.Scanner;
-
 public class InputProcessor {
     private final static Logger LOGGER = LoggerFactory.getLogger(InputProcessor.class);
     private final TextProcessor textProcessor;
@@ -14,10 +12,8 @@ public class InputProcessor {
         this.textProcessor = textProcessor;
     }
 
-    public String processIO(Operation operation) {
-        LOGGER.info("invoke processIO({})", operation);
-        Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
+    public String processIO(Operation operation, String text) {
+        LOGGER.info("invoke processIO({}, {})", operation, text);
 
         switch (operation) {
             case ENCODE:
